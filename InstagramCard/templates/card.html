@@ -1,0 +1,87 @@
+  <script src = "static/scripts/jquery-3.1.1.min.js"></script>
+<link href = "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<html>
+ <head>
+  <title> Instagram Card</title>
+  <meta charset = "UTF-8">
+  <meta name = "author" content="Kriti Sahu">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='insta.png') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
+ 
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ </head>
+<body>
+ <div class = "container">
+   <div class = "header">
+     
+       <h2 class="headline" style="color:white">Card for your Instagram profile</h2>
+   <div class = "myinput">
+        <form action="/"  method="POST">
+    <input name='user' id = "get_user" type = "text" placeholder = "username" required></input>
+
+    <button type="submit" id="click">Done
+ 		</button>
+  </form>
+  </div>
+
+
+</div>
+</div>
+ <div class = "container1">
+  <div class="Card" >
+   <div class = "front face">
+
+    <div class="backdrop">
+
+      <a id='user' href={{profile_url}} target='_blank'>
+      <img class='user_redirect' src="{{ url_for('static', filename = 'media/insta.png') }}">
+    </a>
+
+    </div>
+
+  <img class="img-circle" src={{img_url}}>
+
+  <div class="userDetails">
+
+
+    <h2 class='profileName'>{{profile_name}}</h2>
+    <h5 class="usrname">@{{username}}</h5>
+  </div>
+    <div class="stats"">
+
+      <div id="posts">
+        <strong>Posts</strong>
+     
+     <dd>{{posts}}</dd>
+      </div>
+
+      <div id="followers">
+        <strong>Followers</strong>
+        <dd>{{followers}}</dd>
+      </div>
+
+      <div id="following">
+        <strong>Following</strong>
+        <dd>100</dd>
+      </div>
+
+   </div>
+  </div>
+
+<div class = "back face center">
+<h3>{{ detail }}</h3>
+{% if link %}   
+<h3>{{ link }}</h3>
+{%endif %}
+</div>
+  </div>
+</div>
+</div>
+
+  <div class = "header" >
+    <h4 style="color:white">Made with &#9825; by Kriti Sahu</h4>
+  </div>

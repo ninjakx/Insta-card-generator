@@ -1,0 +1,21 @@
+.Card
+{
+  font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+  color:  #E8E8E8;
+  max-width: 400px;
+  height: 175px;
+  border: 1px solid #d9e5f2;
+  border-radius: 55px;
+  margin: 0 auto;
+  position: relative;
+ }
+
+user_redirect
+{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50px;
+  left: 190px;
+}
+
