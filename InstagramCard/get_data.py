@@ -16,7 +16,7 @@ def userprofile(username):
     display = Display(visible=0, size=(800, 600))
     display.start()
 
-    chromedriver_loc = '/app/chromedriver-Linux64' # enter path of chromedriver
+    chromedriver_loc = '/home/ninjakx/Documents/Insta-card-generator/chromedriver-Linux64' # enter path of chromedriver
     driver = webdriver.Chrome(executable_path=chromedriver_loc)
     driver.get(url)
     soup = BeautifulSoup(driver.page_source,"lxml")
