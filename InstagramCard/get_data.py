@@ -5,18 +5,18 @@ import lxml
 import urllib
 import time
 from urllib.request import urlopen
-from xvfbwrapper import Xvfb
+from pyvirtualdisplay import Display
 import re
-global posts
+
 
 def userprofile(username):
     url = 'http://instagram.com/'+str(username)+'/'
     
     
-    display = Xvfb()
+    display = Display(visible=0, size=(800, 600))
     display.start()
 
-    chromedriver_loc = '/home/ninjakx/anaconda3/envs/myenv/chromedriver-Linux64' # enter path of chromedriver
+    chromedriver_loc = '/app/chromedriver-Linux64' # enter path of chromedriver
     driver = webdriver.Chrome(executable_path=chromedriver_loc)
     driver.get(url)
     soup = BeautifulSoup(driver.page_source,"lxml")
