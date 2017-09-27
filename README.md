@@ -3,14 +3,13 @@
 ### DEMO : https://my-insta-card.herokuapp.com/
 
 ## HOW TO GET STARTED:
-- Clone the repo - git clone git@github.com:ninjakx/Insta-card-generator.git and cd into the Instacard directory. 
+- Clone the repo - '''git clone git@github.com:ninjakx/Insta-card-generator.git''' and cd into the Instacard directory. 
 
 - Create a virtual environment with Python 3 and install dependencies:
-'''
-$ virtualenv insta --python=/path/to/python3
-$ source insta/bin/activate
-$ pip install -r requirements.txt 
-'''
+
+    $ virtualenv insta --python=/path/to/python3
+    $ source insta/bin/activate
+    $ pip install -r requirements.txt 
 
 - Run instagram_card.py
 
