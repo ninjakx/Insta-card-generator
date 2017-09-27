@@ -7,9 +7,11 @@
 
 - Create a virtual environment with Python 3 and install dependencies:
 
-```$ virtualenv insta --python=/path/to/python3
+```
+$ virtualenv insta --python=/path/to/python3
 $ source insta/bin/activate
-$ pip install -r requirements.txt``` 
+$ pip install -r requirements.txt
+``` 
 
 - Run instagram_card.py
 
