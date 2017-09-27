@@ -72,10 +72,11 @@
    </div>
   </div>
 
-<div class = "back face center">
+<div class = "back face center" onclick="window.open('{{profile_url}}','_blank')">
 <h3>{{ detail }}</h3>
 {% if link %}   
-<h3>{{ link }}</h3>
+<a href={{ link }}>{{ link }}</a>
+
 {%endif %}
 </div>
   </div>
