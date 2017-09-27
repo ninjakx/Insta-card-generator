@@ -13,7 +13,7 @@ $ pip install -r requirements.txt >'
 Run instagram_card.py
 
 To run Selenium version:
-> from get_data import * 
+> from get_data import * .
 in instagram_card.py file
 
 To run Simple version:
