@@ -8,11 +8,8 @@ from urllib.request import urlopen
 from pyvirtualdisplay import Display
 import re
 
-
 def userprofile(username):
     url = 'http://instagram.com/'+str(username)+'/'
-    
-    
     display = Display(visible=0, size=(800, 600))
     display.start()
 
