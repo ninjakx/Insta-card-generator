@@ -14,7 +14,7 @@ $ pip install -r requirements.txt
 ``` 
 
 - Run instagram_card.py
-`<python instagram card.py`>
+`<python instagram card.py>`
 
 ### To run Selenium version:
 In instagram_card.py file,do
