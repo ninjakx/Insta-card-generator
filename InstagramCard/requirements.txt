@@ -14,5 +14,5 @@ PyVirtualDisplay==0.2.1
 requests==2.18.4
 selenium==3.5.0
 urllib3==1.22
-Werkzeug==0.12.2
+Werkzeug==0.15.3
 xvfbwrapper==0.2.9
