@@ -7,7 +7,7 @@ Flask==0.12.2
 gunicorn==19.6.0
 idna==2.6
 itsdangerous==0.24
-Jinja2==2.9.6
+Jinja2==2.11.3
 lxml==3.7.3
 MarkupSafe==1.0
 PyVirtualDisplay==0.2.1
